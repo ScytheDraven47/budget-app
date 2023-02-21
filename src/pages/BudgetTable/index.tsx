@@ -1,8 +1,8 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
 type BudgetRow = {
 	startDate: Date
 	isPayWeek: boolean
 }
-const INCOME = 216224
 
 const formatBudgetRow = (row: BudgetRow) => (
 	<tr>
@@ -13,22 +13,22 @@ const formatBudgetRow = (row: BudgetRow) => (
 				year: '2-digit',
 			}).format(row.startDate)}
 		</td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td />
+		<td />
+		<td />
+		<td />
+		<td />
+		<td />
+		<td />
+		<td />
+		<td />
+		<td />
+		<td />
+		<td />
+		<td />
+		<td />
+		<td />
+		<td />
 	</tr>
 )
 
@@ -56,10 +56,10 @@ const BudgetTable = () => {
 					{/* <th></th> */}
 					{/* <th></th> */}
 					{/* <th></th> */}
-					<th></th>
+					<th />
 					<th>Accounts</th>
-					<th></th>
-					<th></th>
+					<th />
+					<th />
 					<th>Subscriptions</th>
 				</tr>
 				<tr>
@@ -79,7 +79,7 @@ const BudgetTable = () => {
 					<th>Sub</th>
 					<th>Credit</th>
 					<th>Description</th>
-					<th></th>
+					<th />
 				</tr>
 			</thead>
 			<tbody>{calculatedRows.map(formatBudgetRow)}</tbody>
