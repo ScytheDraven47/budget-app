@@ -1,0 +1,33 @@
+.table {
+	font-family: var(--font-sans);
+	font-size: 0.8rem;
+	width: max-content;
+	overflow-x: scroll;
+}
+
+.table tbody tr {
+	--bg-opacity: 0.1;
+	background-color: hsla(0, 0%, 50%, var(--bg-opacity));
+}
+.table tbody tr:nth-child(even) {
+	--bg-opacity: 0.2;
+}
+
+.table th,
+.table td {
+	padding: 0.1rem 0.25rem;
+	width: 1%;
+}
+
+.date {
+	font-family: var(--font-mono);
+}
+
+.date,
+.currency {
+	text-align: right;
+}
+
+.table .today {
+	--bg-opacity: 0.5;
+}
